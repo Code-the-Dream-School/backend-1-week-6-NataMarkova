@@ -6,20 +6,16 @@
         <h1> Web Guesser </h1>
         <p>This is a number guessing game built with Sinatra.<br> You have seven tries to guess the secret number. <br><br>Good luck!</p>
         <div>
-            <form method="post" action="/form">
+            <form method="post" action="/">
                 
                 <fieldset>
                     <label for="number">Guess a number from 1 to 100</label>
-                    <input type="text" name="guess_number" id="guess_number" value=<%=@guess_number%>>
-                    <label for="secret_number">Secret number</label>
-                    <p><%=@secret_number%></p>
+                    <input type="text" name="number" id="number" value=<%=@number%>><br>
                 </fieldset>
                 <input type="submit">
-                <p>The guess number is <%=@guess_number%></p>
-
             </form>
         </div>
     </body>
 </html>
 
-# <a href="/">Back to Index</a>
+<a href="/">Back to Index</a>

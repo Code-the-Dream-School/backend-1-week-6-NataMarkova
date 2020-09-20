@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div>
+            <h1> You win! </h1><br>
+            <h3>The guessed number was <%= session[:secret] %></h3>
+            <form method="post" action="/">
+                <label for="back">If you would like play again press the button</label><br>
+                <input type='submit' value='Play Again'>
+            </form>
+        </div>
+    </body>
+</html>
